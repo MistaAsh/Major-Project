@@ -1,4 +1,3 @@
-
 import os.path as osp
 
 import numpy as np
@@ -6,11 +5,10 @@ import numpy as np
 import cv2
 from PIL import Image
 
-if __name__ == '__main__':
-
-    data_dir = 'data/datasets/VOCdevkit/VOC2012/'
-    image_file = osp.join(data_dir, 'JPEGImages/2007_000039.jpg')
-    label_file = osp.join(data_dir, 'SegmentationClass/2007_000039.png')
+if __name__ == "__main__":
+    data_dir = "data/datasets/VOCdevkit/VOC2012/"
+    image_file = osp.join(data_dir, "JPEGImages/2007_000039.jpg")
+    label_file = osp.join(data_dir, "SegmentationClass/2007_000039.png")
     image = cv2.imread(image_file)
 
     # Magic function
